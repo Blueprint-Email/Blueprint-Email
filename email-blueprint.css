@@ -8,15 +8,13 @@ Main window displaying email
 
 #window {
     width: 50%;
-    height: 40%;
+    height: 60%;
     background-color: white;
-    padding: -40%;
+    padding: 0%;
 
     position: absolute;
-    top: 40%;
-    left: 50%;
-    margin-top: -10%;
-    margin-left: -25%;
+    top: 25%;
+    right: 23%;
 
     border-style: solid;
     border-width: 4px;
@@ -25,18 +23,45 @@ Main window displaying email
 }
 
 #reply {
+    width:80px;
+    height: 40px;
+    
+    position: absolute;
+    right:47%;
+    top:90%;
+    
+    
 
 }
 
 #forward {
+    width:80px;
+    height: 40px;
+    
+    position: absolute;
+    right:47%;
+    top:15%;
 
 }
 
 #trash {
+    width:80px;
+    height: 40px;
+    
+    position: absolute;
+    right:82%;
+    top:52%;
+
 
 }
 
 #next {
+    width:80px;
+    height: 40px;
+    
+    position: absolute;
+    right:10%;
+    top:52%;
 
 }
 
