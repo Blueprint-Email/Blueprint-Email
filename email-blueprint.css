@@ -1,0 +1,42 @@
+body {
+    background-color: aliceblue;
+}
+
+/*
+Main window displaying email
+*/
+
+#window {
+    width: 50%;
+    height: 40%;
+    background-color: white;
+    padding: -40%;
+
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-top: -10%;
+    margin-left: -25%;
+
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 15px;
+    border-color: gray;
+}
+
+#reply {
+
+}
+
+#forward {
+
+}
+
+#trash {
+
+}
+
+#next {
+
+}
+
