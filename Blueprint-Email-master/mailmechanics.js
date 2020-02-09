@@ -18,7 +18,7 @@ function choose(event){
 
 window.document.addEventListener("keydown", choose); 
 
-var data = {"1": {"body": "Emails suck \ Tinder is good", "subject": "The Problem"}, "2": {"body": "body2", "subject": "Our Product"}, "3": {"body": "body3", "subject": "How It Works"}, "4": {"body": "body4", "subject": "The Future"}}
+var data = {"1": {"body": "Email is too cluttered <br>Can you even read anything?</br>", "subject": "The Problem"}, "2": {"body": "Email with Tinder mechanics <br>Swipe to trash, reply, forward, or keep reading</br>", "subject": "Our Product"}, "3": {"body": "Python scraper <br>Web app</br>", "subject": "How It Works"}, "4": {"body": "Phone app <br>Images and attachments</br><br>UI + UX</br>", "subject": "The Future"}}
 var subjects = [];
 var bodies = [];
 for (var email in data){
