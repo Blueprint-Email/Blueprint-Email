@@ -18,7 +18,7 @@ function choose(event){
 
 window.document.addEventListener("keydown", choose); 
 
-var data = {"1": {"body": "Email is too cluttered <br>Can you even read anything?</br>", "subject": "The Problem"}, "2": {"body": "Email with Tinder mechanics <br>Swipe to trash, reply, forward, or keep reading</br>", "subject": "Our Product"}, "3": {"body": "Python scraper <br>Web app</br>", "subject": "How It Works"}, "4": {"body": "Phone app <br>Images and attachments</br><br>UI + UX</br>", "subject": "The Future"}}
+var data = {"1": {"body": "Email is too cluttered <br>All that text--can you even read anything?</br><br>Too many clicks</br>", "subject": "The Problem"}, "2": {"body": "Email with Tinder mechanics <br>Swipe to trash, reply, forward, or keep reading</br>", "subject": "Our Product"}, "3": {"body": "Python scraper <br>Web app</br>", "subject": "How It Works"}, "4": {"body": "Phone app <br>Images and attachments</br><br>UI + UX</br>", "subject": "The Future"}}
 var subjects = [];
 var bodies = [];
 for (var email in data){
@@ -42,8 +42,8 @@ function loadMSG(index) {
 }
 
 function nextMail() {
-    if (!nextSee) { window.document.getElementById("next").style.visibility = "visible"; nextSee = true; }
-    else { window.document.getElementById("next").style.visibility = "hidden"; nextSee = false; }
+    //if (!nextSee) { window.document.getElementById("next").style.visibility = "visible"; nextSee = true; }
+    //else { window.document.getElementById("next").style.visibility = "hidden"; nextSee = false;}
     var nextIndex = (index + 1) % (bodies.length);
     loadMSG(nextIndex);
     index = nextIndex;
