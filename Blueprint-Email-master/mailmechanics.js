@@ -18,22 +18,23 @@ function choose(event){
 
 window.document.addEventListener("keydown", choose); 
 
-var data = {"1": {"body": "body1", "subject": "subject 1"}, "2": {"body": "body2", "subject": "subject 2"}, "3": {"body": "body3", "subject": "subject 3"}, "4": {"body": "body4", "subject": "subject 4"}}
-
-
+var data = {"1": {"body": "Emails suck \ Tinder is good", "subject": "The Problem"}, "2": {"body": "body2", "subject": "Our Product"}, "3": {"body": "body3", "subject": "How It Works"}, "4": {"body": "body4", "subject": "The Future"}}
+var subjects = [];
+var bodies = [];
+for (var email in data){
+    subjects.push(data[email]["subject"])
+    bodies.push(data[email]["body"])    
+}
+console.log(subjects)
+console.log(bodies)
 
 function loadMSG(index) {
-    var header;
-    var body;
-    for (var email in data){
-        var subj = email["subject"];
-        var bod = email["body"];
-    }
-    header = window.document.getElementById("body");
-    body = window.document.getElementById("subject");
+    var subject = subjects[index];
+    var bodtext = bodies[index];
+    
+    document.getElementById("body").innerHTML = bodtext;
+    document.getElementById("subject").innerHTML = subject;
 
-    header.innerHTML = "Hello";
-    body.innerHTML = bod;
     
 
 //var attachments;
@@ -43,8 +44,9 @@ function loadMSG(index) {
 function nextMail() {
     if (!nextSee) { window.document.getElementById("next").style.visibility = "visible"; nextSee = true; }
     else { window.document.getElementById("next").style.visibility = "hidden"; nextSee = false; }
-    var nextIndex = (index + 1) % (9);
+    var nextIndex = (index + 1) % (bodies.length);
     loadMSG(nextIndex);
+    index = nextIndex;
 }
 
 function deleteMail() {
