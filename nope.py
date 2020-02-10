@@ -18,4 +18,4 @@ data = json.dumps(parsed_eml, default=json_serial)
 print(data)
 
 with open('data.json', 'w+') as f:
-    json.dump(data, f, ensure_ascii=False, indent=4)
+    json.dump(data, f, ensure_ascii=False)
